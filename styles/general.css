@@ -5,7 +5,7 @@
 body {
     background: black;
     font-family: roboto, arial;
-    width: 100%;
+    width: 1920px;
 }
 #header {
     display: flex;
