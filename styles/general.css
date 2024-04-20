@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: black;
+    font-family: roboto, arial;
+}
+#header {
+    display: flex;
+    background: white;
+    padding: 1em;
+}
+#header i {
+    color: black;
+    transition: 0.5s;
+}
+#header i:hover {
+    color: rgb(39, 39, 39);
+}
+#headerLeft {
+    flex: 1;
+}
+#headerMid {
+    /* flex: 1em; */
+}
+#headerMid h1 {
+    color: black;
+}
+#headerRight {
+    flex: 1;
+}
+#headerRight button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 15%;
+    transform: translateY(20%);
+}
+#socialNetwork {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    position: relative;
+}
+#socialNetwork i {
+    color: white;
+    margin: 1em;
+    transition: 0.5s;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.3);
+    border-radius: 100px;
+}
+#socialNetwork i:hover {
+    color: rgb(218, 218, 218);
+}
+#copyright {
+    color: white;
+    position: absolute;
+    right: 1em;
+}
