@@ -1,0 +1,164 @@
+#wrapper {
+    overflow: hidden;
+    position: relative;
+    border: 20px solid black;
+}
+#carousel {
+    width: 100%;
+    display: flex;
+    /* animation: slide 16s infinite; */
+}
+#carousel input {
+    display: none;
+}
+.slide {
+    width: 100%;
+    transition: 2s;
+}
+.slide img {
+    width: 1500px;
+    height: 840px;
+}
+@keyframes slide {
+    /* 0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    55% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-200%);
+    }
+    80% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(-300%);
+    } */
+    /* 0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    35%{
+        transform: translateX(-100%);
+    }
+    45%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    85%{
+        transform: translateX(-100%);
+    }
+    90%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    } */
+}
+.autoNav {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 85%;
+}
+.autoNav div {
+    border: 2px solid white;
+    padding: 8px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.autoNav div:not(:last-child) {
+    margin-right: 60px;
+}
+#radio1:checked ~ .autoNav .autoBtn1 {
+    background: white;
+}
+#radio2:checked ~ .autoNav .autoBtn2 {
+    background: white;
+}
+#radio3:checked ~ .autoNav .autoBtn3 {
+    background: white;
+}
+#radio4:checked ~ .autoNav .autoBtn4 {
+    background: white;
+}
+#manualNav {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 85%;
+}
+.manualBtn {
+    border: 2px solid white;
+    padding: 8px;
+    border-radius: 10px;
+    transition: 1s;
+    cursor: pointer;
+}
+.manualBtn:hover {
+    background: white;
+}
+.manualBtn:not(:last-child) {
+    margin-right: 60px;
+}
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+#radio2:checked ~ .first {
+    margin-left: -100%;
+}
+#radio3:checked ~ .first {
+    margin-left: -200%;
+}
+#radio4:checked ~ .first {
+    margin-left: -300%;
+}
+#information {
+    background: white;
+    padding: 1em;
+    text-align: center;
+}
+#information h2 {
+    margin: 20px;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+#information p {
+    font-size: 1.5em;
+    margin: 10px;
+}
+#information img {
+    margin: 2em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+}
+#contact a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+#contact a:hover {
+    color: rgb(37, 37, 37);
+    border: 3px solid rgb(37, 37, 37);
+    border-radius: 10px;
+    padding: 5px;
+}
