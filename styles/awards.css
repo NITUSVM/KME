@@ -1,0 +1,10 @@
+.galeria img {
+    width: 960px;
+    height: 540px;
+    display: block;
+    margin: auto;
+    border: 10px solid white;
+}
+.galeria {
+    padding: 20px;
+}
