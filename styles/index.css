@@ -1,12 +1,10 @@
 #wrapper {
-    overflow: hidden;
     position: relative;
-    border: 20px solid black;
+    overflow: hidden;
 }
 #carousel {
     width: 100%;
     display: flex;
-    /* animation: slide 16s infinite; */
 }
 #carousel input {
     display: none;
@@ -16,8 +14,9 @@
     transition: 2s;
 }
 .slide img {
-    width: 1500px;
-    height: 840px;
+    width: 960px;
+    height: 540px;
+    margin: 0 270px;
 }
 @keyframes slide {
     /* 0% {
@@ -124,13 +123,13 @@
     margin-left: 0;
 }
 #radio2:checked ~ .first {
-    margin-left: -100%;
+    margin-left: -1500px;
 }
 #radio3:checked ~ .first {
-    margin-left: -200%;
+    margin-left: -3000px;
 }
 #radio4:checked ~ .first {
-    margin-left: -300%;
+    margin-left: -4500px;
 }
 #information {
     background: white;
@@ -147,10 +146,26 @@
     margin: 10px;
 }
 #information img {
+    width: 540px;
+    height: 270px;
     margin: 2em;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
     border-radius: 30px;
 }
+
+.pro, .sdo {
+    transition: 2s;
+}
+.images-change:hover .sdo {
+    display: inline-block;
+}
+.images-change:hover .pro {
+    display: none;
+}
+.sdo {
+    display: none;
+}
+
 #contact a {
     text-decoration: none;
     color: black;
@@ -159,6 +174,26 @@
 #contact a:hover {
     color: rgb(37, 37, 37);
     border: 3px solid rgb(37, 37, 37);
+    border-radius: 10px;
+    padding: 5px;
+}
+.awards-section {
+    background: purple;
+    padding: 4em 6em;
+    display: flex;
+    justify-content: center;
+}
+.awards-section a {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.awards-section a:hover {
+    color: purple;
+    background: white;
+    border: 3px solid rgb(146, 0, 146);
     border-radius: 10px;
     padding: 5px;
 }
